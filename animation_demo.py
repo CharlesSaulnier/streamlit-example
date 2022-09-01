@@ -1,3 +1,10 @@
+from collections import namedtuple
+import altair as alt
+import math
+import pandas as pd
+import streamlit as st
+import numpy as np
+
 # Interactive Streamlit elements, like these sliders, return their value.
 # This gives you an extremely simple interaction model.
 iterations = st.sidebar.slider("Level of detail", 2, 20, 10, 1)
